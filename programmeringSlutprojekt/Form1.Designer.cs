@@ -37,10 +37,14 @@
             this.box3 = new System.Windows.Forms.Button();
             this.box2 = new System.Windows.Forms.Button();
             this.box1 = new System.Windows.Forms.Button();
+            this.startBtn = new System.Windows.Forms.Button();
+            this.resetBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // box0
             // 
+            this.box0.Enabled = false;
             this.box0.Location = new System.Drawing.Point(12, 13);
             this.box0.Name = "box0";
             this.box0.Size = new System.Drawing.Size(100, 100);
@@ -50,6 +54,7 @@
             // 
             // box8
             // 
+            this.box8.Enabled = false;
             this.box8.Location = new System.Drawing.Point(225, 225);
             this.box8.Name = "box8";
             this.box8.Size = new System.Drawing.Size(100, 100);
@@ -59,6 +64,7 @@
             // 
             // box7
             // 
+            this.box7.Enabled = false;
             this.box7.Location = new System.Drawing.Point(119, 225);
             this.box7.Name = "box7";
             this.box7.Size = new System.Drawing.Size(100, 100);
@@ -68,6 +74,7 @@
             // 
             // box6
             // 
+            this.box6.Enabled = false;
             this.box6.Location = new System.Drawing.Point(12, 225);
             this.box6.Name = "box6";
             this.box6.Size = new System.Drawing.Size(100, 100);
@@ -77,6 +84,7 @@
             // 
             // box5
             // 
+            this.box5.Enabled = false;
             this.box5.Location = new System.Drawing.Point(225, 119);
             this.box5.Name = "box5";
             this.box5.Size = new System.Drawing.Size(100, 100);
@@ -86,6 +94,7 @@
             // 
             // box4
             // 
+            this.box4.Enabled = false;
             this.box4.Location = new System.Drawing.Point(119, 119);
             this.box4.Name = "box4";
             this.box4.Size = new System.Drawing.Size(100, 100);
@@ -95,6 +104,7 @@
             // 
             // box3
             // 
+            this.box3.Enabled = false;
             this.box3.Location = new System.Drawing.Point(12, 119);
             this.box3.Name = "box3";
             this.box3.Size = new System.Drawing.Size(100, 100);
@@ -104,6 +114,7 @@
             // 
             // box2
             // 
+            this.box2.Enabled = false;
             this.box2.Location = new System.Drawing.Point(225, 13);
             this.box2.Name = "box2";
             this.box2.Size = new System.Drawing.Size(100, 100);
@@ -113,6 +124,7 @@
             // 
             // box1
             // 
+            this.box1.Enabled = false;
             this.box1.Location = new System.Drawing.Point(119, 13);
             this.box1.Name = "box1";
             this.box1.Size = new System.Drawing.Size(100, 100);
@@ -120,11 +132,45 @@
             this.box1.UseVisualStyleBackColor = true;
             this.box1.Click += new System.EventHandler(this.btnClick);
             // 
+            // startBtn
+            // 
+            this.startBtn.Location = new System.Drawing.Point(377, 69);
+            this.startBtn.Name = "startBtn";
+            this.startBtn.Size = new System.Drawing.Size(75, 23);
+            this.startBtn.TabIndex = 11;
+            this.startBtn.Text = "Starta";
+            this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.Enabled = false;
+            this.resetBtn.Location = new System.Drawing.Point(471, 69);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetBtn.TabIndex = 12;
+            this.resetBtn.Text = "Börja om";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(344, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 37);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Luffarschack";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.resetBtn);
+            this.Controls.Add(this.startBtn);
             this.Controls.Add(this.box1);
             this.Controls.Add(this.box2);
             this.Controls.Add(this.box3);
@@ -137,6 +183,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -151,6 +198,9 @@
         private System.Windows.Forms.Button box3;
         private System.Windows.Forms.Button box2;
         private System.Windows.Forms.Button box1;
+        private System.Windows.Forms.Button startBtn;
+        private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
 
