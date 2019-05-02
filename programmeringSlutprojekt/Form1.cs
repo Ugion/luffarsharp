@@ -19,6 +19,7 @@ namespace programmeringSlutprojekt
         Color Green = Color.FromName("Green");
         int player1Wins;
         int player2Wins;
+        int moveCounter;
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +36,9 @@ namespace programmeringSlutprojekt
 
         void initGame()
         {
+            moveCounter = 0;
+            plr1Wins.Text = "Spelare 1 har vunnit: " + player1Wins.ToString() + " gånger";
+            plr2Wins.Text = "Spelare 2 har vunnit: " + player2Wins.ToString() + " gånger";
             startBtn.Enabled = false;
             resetBtn.Enabled = true;
             Array.Clear(board, 0, board.Length);
@@ -63,8 +67,8 @@ namespace programmeringSlutprojekt
         }
         private bool registerClick(Button btn, int player)
         {
-            //hämta den fjärde karaktären i knappens namn, alltså platsen i fältet
-            int btnNr = btn.Name[3] - 48;
+            //hämta den fjärde karaktären i knappens namn, alltså platsen i fältet, konvertera den från en char till en double till en int.
+            int btnNr = (int)char.GetNumericValue(btn.Name[3]);
             if (board[btnNr] == 0)
             {
                 //ändra färg och notifiera eventhanteraren att en tillåten tryckning skett
@@ -93,6 +97,7 @@ namespace programmeringSlutprojekt
             if (legalClick == true)
             {
                 int winState = checkWin();
+                MessageBox.Show("Rutorna är" + board[6] + board[7] + board[8]);
                 if (winState != 0)
                 {
                     decWinner(winState);
@@ -101,19 +106,61 @@ namespace programmeringSlutprojekt
                 {
 
                     currPlayer--;
+                    moveCounter++;
                     //kör datorns omgång
                 }
                 else
                 {
                     //ge kontroll till spelaren
                     currPlayer++;
+                    moveCounter++;
                 }
             }
         }
         
         int checkWin()
         {
-            return 0;
+            //kolla alla winstates
+            if (board[0] == board[3] && board[3] == board[6])
+            {
+                return board[0];
+            }
+            else if (board[0] == board[1] && board[1] == board[2])
+            {
+                return board[0];
+            }
+            else if (board[0] == board[4] && board[4] == board[8])
+            {
+                return board[0];
+            }
+            else if (board[3] == board[4] && board[4] == board[5])
+            {
+                return board[3];
+            }
+            else if (board[6] == board[4] && board[4] == board[2])
+            {
+                return board[6];
+            }
+            else if (board[6] == board[7] && board[6] == board[8])
+            {
+                return board[6];
+            }
+            else if (board[1] == board[4] && board[1] == board[7])
+            {
+                return board[1];
+            }
+            else if (board[2] == board[5] && board[2] == board[8])
+            {
+                return board[2];
+            }
+            else if (moveCounter == 8)
+            {
+                return 3;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         void decWinner(int state)
@@ -122,10 +169,12 @@ namespace programmeringSlutprojekt
             if (state == 1)
             {
                 player1Wins++;
+                MessageBox.Show("Spelare 1 vann!");
             }
             else if (state == 2)
             {
                 player2Wins++;
+                MessageBox.Show("Spelare 2 vann!");
             }
             else if (state == 3)
             {

@@ -40,6 +40,8 @@
             this.startBtn = new System.Windows.Forms.Button();
             this.resetBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.plr1Wins = new System.Windows.Forms.Label();
+            this.plr2Wins = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // box0
@@ -134,9 +136,9 @@
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(377, 69);
+            this.startBtn.Location = new System.Drawing.Point(370, 63);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(75, 23);
+            this.startBtn.Size = new System.Drawing.Size(75, 35);
             this.startBtn.TabIndex = 11;
             this.startBtn.Text = "Starta";
             this.startBtn.UseVisualStyleBackColor = true;
@@ -145,9 +147,9 @@
             // resetBtn
             // 
             this.resetBtn.Enabled = false;
-            this.resetBtn.Location = new System.Drawing.Point(471, 69);
+            this.resetBtn.Location = new System.Drawing.Point(482, 63);
             this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetBtn.Size = new System.Drawing.Size(75, 35);
             this.resetBtn.TabIndex = 12;
             this.resetBtn.Text = "Börja om";
             this.resetBtn.UseVisualStyleBackColor = true;
@@ -163,11 +165,33 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Luffarschack";
             // 
+            // plr1Wins
+            // 
+            this.plr1Wins.AutoSize = true;
+            this.plr1Wins.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plr1Wins.Location = new System.Drawing.Point(348, 132);
+            this.plr1Wins.Name = "plr1Wins";
+            this.plr1Wins.Size = new System.Drawing.Size(232, 18);
+            this.plr1Wins.TabIndex = 14;
+            this.plr1Wins.Text = "Spelare 1 har vunnit: 0 gånger";
+            // 
+            // plr2Wins
+            // 
+            this.plr2Wins.AutoSize = true;
+            this.plr2Wins.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plr2Wins.Location = new System.Drawing.Point(348, 169);
+            this.plr2Wins.Name = "plr2Wins";
+            this.plr2Wins.Size = new System.Drawing.Size(232, 18);
+            this.plr2Wins.TabIndex = 15;
+            this.plr2Wins.Text = "Spelare 2 har vunnit: 0 gånger";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(601, 343);
+            this.Controls.Add(this.plr2Wins);
+            this.Controls.Add(this.plr1Wins);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.startBtn);
@@ -201,6 +225,8 @@
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label plr1Wins;
+        private System.Windows.Forms.Label plr2Wins;
     }
 }
 
