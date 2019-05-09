@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace programmeringSlutprojekt
 {
-    public partial class Form1 : Form
+    public partial class Luffarschack : Form
     {
         int[] board = new int[9];
         private static readonly Random randPlayer = new Random();
@@ -20,7 +20,7 @@ namespace programmeringSlutprojekt
         int player1Wins;
         int player2Wins;
         int moveCounter;
-        public Form1()
+        public Luffarschack()
         {
             InitializeComponent();
         }
@@ -92,12 +92,13 @@ namespace programmeringSlutprojekt
         private void btnClick(object sender, EventArgs e)
         {
             Button Button = (Button)sender;
+            //registerClick returnerar true om platsen var tom, annars false
             bool legalClick = registerClick(Button, currPlayer);
             //om knapptryckningen var tillåten, kolla om någon vunnit, annars fortsätt till nästa spelare
             if (legalClick == true)
             {
                 int winState = checkWin();
-                MessageBox.Show("Rutorna är" + board[6] + board[7] + board[8]);
+                //winState returnerar 0 för ingen vinnare, 1 för spelare 1, 2 för spelare 2 och 3 för oavgjort
                 if (winState != 0)
                 {
                     decWinner(winState);
@@ -117,39 +118,39 @@ namespace programmeringSlutprojekt
                 }
             }
         }
-        
+
         int checkWin()
         {
             //kolla alla winstates
-            if (board[0] == board[3] && board[3] == board[6])
+            if (board[0] != 0 && board[0] == board[3] && board[3] == board[6])
             {
                 return board[0];
             }
-            else if (board[0] == board[1] && board[1] == board[2])
+            else if (board[0] != 0 && board[0] == board[1] && board[1] == board[2])
             {
                 return board[0];
             }
-            else if (board[0] == board[4] && board[4] == board[8])
+            else if (board[0] != 0 && board[0] == board[4] && board[4] == board[8])
             {
                 return board[0];
             }
-            else if (board[3] == board[4] && board[4] == board[5])
+            else if (board[3] != 0 && board[3] == board[4] && board[4] == board[5])
             {
                 return board[3];
             }
-            else if (board[6] == board[4] && board[4] == board[2])
+            else if (board[6] != 0 && board[6] == board[4] && board[4] == board[2])
             {
                 return board[6];
             }
-            else if (board[6] == board[7] && board[6] == board[8])
+            else if (board[6] != 0 && board[6] == board[7] && board[6] == board[8])
             {
                 return board[6];
             }
-            else if (board[1] == board[4] && board[1] == board[7])
+            else if (board[1] != 0 && board[1] == board[4] && board[1] == board[7])
             {
                 return board[1];
             }
-            else if (board[2] == board[5] && board[2] == board[8])
+            else if (board[2] != 0 && board[2] == board[5] && board[2] == board[8])
             {
                 return board[2];
             }
@@ -165,6 +166,7 @@ namespace programmeringSlutprojekt
 
         void decWinner(int state)
         {
+            //state är 0 för ingen vinnare, 1 för spelare 1, 2 för spelare 2 och 3 för oavgjort
             //Inkrementera antalet gånger respektive spelare vunnit, återställer spelet.
             if (state == 1)
             {
