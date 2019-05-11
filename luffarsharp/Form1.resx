@@ -120,19 +120,15 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Luffarschack</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="plr2Wins.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>601, 343</value>
+  </data>
   <data name="box3.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 119</value>
   </data>
   <data name="&gt;&gt;resetBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="plr1Wins.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
   </data>
   <data name="&gt;&gt;box0.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -143,6 +139,7 @@
   <data name="&gt;&gt;box7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="box5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -155,8 +152,8 @@
   <data name="plr1Wins.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 18</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Luffarschack</value>
+  <data name="&gt;&gt;plr2Wins.Name" xml:space="preserve">
+    <value>plr2Wins</value>
   </data>
   <data name="box0.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -185,8 +182,8 @@
   <data name="&gt;&gt;box7.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;resetBtn.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="box1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
   </data>
   <data name="box0.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -194,8 +191,11 @@
   <data name="box0.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;plr2Wins.Name" xml:space="preserve">
-    <value>plr2Wins</value>
+  <data name="resetBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 35</value>
+  </data>
+  <data name="box4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 24pt, style=Bold</value>
@@ -203,11 +203,8 @@
   <data name="&gt;&gt;startBtn.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="resetBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
-  </data>
-  <data name="box4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
+  <data name="plr1Wins.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;box1.Name" xml:space="preserve">
     <value>box1</value>
@@ -218,6 +215,9 @@
   <data name="&gt;&gt;startBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="box6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -226,9 +226,6 @@
   </data>
   <data name="box0.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 13</value>
-  </data>
-  <data name="plr2Wins.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;box0.Parent" xml:space="preserve">
     <value>$this</value>
@@ -245,8 +242,8 @@
   <data name="box8.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="resetBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="resetBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 63</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 37</value>
@@ -263,11 +260,8 @@
   <data name="box1.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 13</value>
   </data>
-  <data name="&gt;&gt;box7.Name" xml:space="preserve">
-    <value>box7</value>
-  </data>
-  <data name="startBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 63</value>
+  <data name="&gt;&gt;box3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="box4.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 119</value>
@@ -290,9 +284,6 @@
   <data name="startBtn.Text" xml:space="preserve">
     <value>Starta</value>
   </data>
-  <data name="&gt;&gt;plr2Wins.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="box6.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -301,6 +292,9 @@
   </data>
   <data name="&gt;&gt;box5.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;box5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="plr2Wins.Text" xml:space="preserve">
     <value>Spelare 2 har vunnit: 0 gånger</value>
@@ -332,8 +326,8 @@
   <data name="plr2Wins.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;box5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="plr2Wins.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;box1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -342,6 +336,9 @@
     <value>100, 100</value>
   </data>
   <data name="&gt;&gt;startBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;box0.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="box5.Location" type="System.Drawing.Point, System.Drawing">
@@ -359,32 +356,26 @@
   <data name="&gt;&gt;box2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="plr2Wins.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 18</value>
+  <data name="&gt;&gt;box7.Name" xml:space="preserve">
+    <value>box7</value>
   </data>
-  <data name="plr1Wins.Text" xml:space="preserve">
-    <value>Spelare 1 har vunnit: 0 gånger</value>
-  </data>
-  <data name="&gt;&gt;box8.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="startBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 63</value>
   </data>
   <data name="box3.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;box3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="startBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 35</value>
   </data>
-  <data name="box4.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;box3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;box3.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="box4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
   </data>
   <data name="&gt;&gt;box5.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -398,8 +389,8 @@
   <data name="&gt;&gt;box5.Name" xml:space="preserve">
     <value>box5</value>
   </data>
-  <data name="&gt;&gt;plr2Wins.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;box8.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -419,8 +410,14 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
   </data>
-  <data name="box1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
+  <data name="&gt;&gt;box6.Name" xml:space="preserve">
+    <value>box6</value>
+  </data>
+  <data name="&gt;&gt;plr2Wins.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;box3.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;box1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -434,8 +431,8 @@
   <data name="&gt;&gt;startBtn.Name" xml:space="preserve">
     <value>startBtn</value>
   </data>
-  <data name="&gt;&gt;box6.Name" xml:space="preserve">
-    <value>box6</value>
+  <data name="resetBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="resetBtn.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -449,14 +446,17 @@
   <data name="box8.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 225</value>
   </data>
+  <data name="box8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="box7.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
   </data>
-  <data name="resetBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 63</value>
+  <data name="plr2Wins.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="box6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;plr2Wins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;box4.Name" xml:space="preserve">
     <value>box4</value>
@@ -464,26 +464,26 @@
   <data name="&gt;&gt;box6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="plr2Wins.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 18</value>
+  </data>
   <data name="box7.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 225</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>601, 343</value>
   </data>
   <data name="&gt;&gt;box7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="box8.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Luffarschack</value>
   </data>
-  <data name="&gt;&gt;box0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;resetBtn.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;plr2Wins.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;box3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="plr1Wins.Text" xml:space="preserve">
+    <value>Spelare 1 har vunnit: 0 gånger</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
