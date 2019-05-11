@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programmeringSlutprojekt", "programmeringSlutprojekt\programmeringSlutprojekt.csproj", "{78037E01-E86A-44C8-AE0D-5B23C363D965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "luffarsharp", "luffarsharp\luffarsharp.csproj", "{78037E01-E86A-44C8-AE0D-5B23C363D965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
