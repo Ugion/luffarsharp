@@ -36,6 +36,7 @@ namespace programmeringSlutprojekt
 
         void initGame()
         {
+            
             moveCounter = 0;
             plr1Wins.Text = "Spelare 1 har vunnit: " + player1Wins.ToString() + " gånger";
             plr2Wins.Text = "Spelare 2 har vunnit: " + player2Wins.ToString() + " gånger";
@@ -43,27 +44,14 @@ namespace programmeringSlutprojekt
             resetBtn.Enabled = true;
             Array.Clear(board, 0, board.Length);
             currPlayer = randPlayer.Next(1, 3);
-            //gör alla knappar klickbara
-            box0.Enabled = true;
-            box1.Enabled = true;
-            box2.Enabled = true;
-            box3.Enabled = true;
-            box4.Enabled = true;
-            box5.Enabled = true;
-            box6.Enabled = true;
-            box7.Enabled = true;
-            box8.Enabled = true;
-            //återställ knapparnas färger
-            box0.BackColor = default(Color);
-            box1.BackColor = default(Color);
-            box2.BackColor = default(Color);
-            box3.BackColor = default(Color);
-            box4.BackColor = default(Color);
-            box5.BackColor = default(Color);
-            box6.BackColor = default(Color);
-            box7.BackColor = default(Color);
-            box8.BackColor = default(Color);
-
+            //skapa ett fält med alla rutor
+            Button[] boxes = { box0, box1, box2, box3, box4, box5, box6, box7, box8 };
+            //loopa igenom fältet
+            foreach (Button btn in boxes)
+            {
+                btn.BackColor = default(Color);
+                btn.Enabled = true;
+            }
         }
         private bool registerClick(Button btn, int player)
         {
